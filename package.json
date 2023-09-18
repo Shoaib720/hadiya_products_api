@@ -7,7 +7,7 @@
   "scripts": {
     "pm2": "pm2",
     "serve": "NODE_ENV=production node src/index.js",
-    "start": "NODE_ENV=production pm2 start src/index.js --name hadiya-api",
+    "start": "NODE_ENV=production pm2 start src/index.js --name hadiya-api -f",
     "stop": "NODE_ENV=production pm2 stop src/index.js --name hadiya-api",
     "restart": "NODE_ENV=production pm2 restart src/index.js --name hadiya-api",
     "dev-db-setup": "sequelize db:migrate && sequelize db:seed:all"
