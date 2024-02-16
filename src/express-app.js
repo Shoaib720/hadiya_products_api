@@ -12,7 +12,7 @@ export function expressApp(app) {
 
   app.get('/', (_req, res, _next) => {
     res.status(200).send({
-      message: 'Products service is up and running test 1'
+      message: 'Products service is up and running test 2'
     });
   });
 
