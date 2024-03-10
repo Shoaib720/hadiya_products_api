@@ -5,3 +5,6 @@ steps:
     args: ['push', 'asia-south1-docker.pkg.dev/${PROJECT_ID}/hadiya-products/products_api:${COMMIT_SHA}']
   - name: gcr.io/cloud-builders/gcloud
     args: ['run','deploy','hadiya-products-api-dev','--image=asia-south1-docker.pkg.dev/${PROJECT_ID}/hadiya-products/products_api:${COMMIT_SHA}']
+
+options:
+  logging: CLOUD_LOGGING_ONLY
